@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ed McGovern Heating & Plumbing Ltd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="topbar__inner">
+    <span class="topbar__status" id="statusBadge">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking availability…</span>
+    </span>
+    <a href="tel:+353868635853" class="topbar__phone">086 863 5853</a>
+  </div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <span class="nav__brand-mark">EM</span>
+      <span class="nav__brand-text">Ed McGovern<br><small>Heating &amp; Plumbing</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+353868635853" class="btn btn--nav">Call Now</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">Heating &amp; Plumbing · Local &amp; Family Run</p>
+      <h1 class="hero__title">Warm homes.<br>Steady water.<br><span>Zero fuss.</span></h1>
+      <p class="hero__sub">Boiler repairs, installations and plumbing fixes done right the first time — call Ed directly, no call centres.</p>
+      <div class="hero__actions">
+        <a href="tel:+353868635853" class="btn btn--primary">Call 086 863 5853</a>
+        <a href="#contact" class="btn btn--ghost">Get a Free Quote</a>
+      </div>
+      <div class="hero__stats" id="statCounters">
+        <div class="stat">
+          <span class="stat__num" data-target="14">0</span><span class="stat__suffix">+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="500">0</span><span class="stat__suffix">+</span>
+          <span class="stat__label">Jobs Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-target="1">0</span><span class="stat__suffix">hr</span>
+          <span class="stat__label">Avg. Callout Response</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <svg viewBox="0 0 400 460" class="pipe-diagram">
+        <path id="pipePath" class="pipe-diagram__line" d="M40,40 L280,40 L280,160 L360,160 L360,300 L120,300 L120,420 L340,420" />
+        <circle class="pipe-diagram__node" cx="40" cy="40" r="7"/>
+        <circle class="pipe-diagram__node" cx="280" cy="160" r="7"/>
+        <circle class="pipe-diagram__node" cx="360" cy="300" r="7"/>
+        <circle class="pipe-diagram__node" cx="120" cy="300" r="7"/>
+        <circle class="pipe-diagram__node pipe-diagram__node--hot" cx="340" cy="420" r="9"/>
+      </svg>
+    </div>
+  </div>
+  <div class="flow-divider" aria-hidden="true">
+    <svg preserveAspectRatio="none" viewBox="0 0 1200 40" class="flow-divider__svg">
+      <path class="flow-divider__path" d="M0,20 L1200,20"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="eyebrow">What I Do</p>
+    <h2>Every job, one number to call</h2>
+  </div>
+  <div class="services__grid">
+
+    <article class="service-card">
+      <div class="service-card__icon">
+        <svg viewBox="0 0 48 48"><path d="M24 4c-7 8-11 14-11 20a11 11 0 0 0 22 0c0-6-4-12-11-20z"/></svg>
+      </div>
+      <h3>Boiler Repair &amp; Servicing</h3>
+      <p>Fast diagnostics and fixes for all major boiler brands, plus annual servicing to keep warranties valid.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card__icon">
+        <svg viewBox="0 0 48 48"><rect x="8" y="14" width="32" height="20" rx="2"/><path d="M14 14V9h20v5M14 39v-5h20v5"/></svg>
+      </div>
+      <h3>Heating Installations</h3>
+      <p>New boiler installs, radiator upgrades and full central heating systems designed for your home.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card__icon">
+        <svg viewBox="0 0 48 48"><path d="M12 20h10V10a2 2 0 0 1 4 0v10h10v6H12z"/><path d="M18 26v10a6 6 0 0 0 12 0V26"/></svg>
+      </div>
+      <h3>General Plumbing</h3>
+      <p>Leaks, blockages, tap and pipe repairs, bathroom fittings — sorted quickly and cleanly.</p>
+    </article>
+
+    <article class="service-card service-card--highlight">
+      <div class="service-card__icon">
+        <svg viewBox="0 0 48 48"><path d="M24 4 4 24h6v18h12V30h4v12h12V24h6z"/></svg>
+      </div>
+      <h3>Emergency Callouts</h3>
+      <p>Burst pipe or no heat in the middle of winter? I answer the phone — same-day emergency response.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card__icon">
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l7 5"/></svg>
+      </div>
+      <h3>Landlord Safety Checks</h3>
+      <p>Gas and heating safety inspections for rental properties, with certification on completion.</p>
+    </article>
+
+    <article class="service-card">
+      <div class="service-card__icon">
+        <svg viewBox="0 0 48 48"><path d="M8 24h32M24 8v32"/><circle cx="24" cy="24" r="16"/></svg>
+      </div>
+      <h3>Bathroom Fitting</h3>
+      <p>Full bathroom plumbing for renovations — showers, baths, sinks and toilets fitted properly.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="why" id="why">
+  <div class="why__grid">
+    <div class="why__copy">
+      <p class="eyebrow">Why Homeowners Call Ed</p>
+      <h2>No vans full of strangers. Just the person who'll actually do the job.</h2>
+      <ul class="why__list">
+        <li><strong>Direct contact.</strong> You speak to Ed, not a dispatcher.</li>
+        <li><strong>Fully insured</strong> for total peace of mind on every job.</li>
+        <li><strong>Upfront pricing</strong> before any work begins — no surprise call-out fees.</li>
+        <li><strong>Local to your area</strong>, with fast response times.</li>
+      </ul>
+      <a href="#contact" class="btn btn--primary">Book a Job</a>
+    </div>
+    <div class="why__badge-panel" id="liveClockPanel">
+      <p class="why__badge-label">Right now</p>
+      <p class="why__clock" id="liveClock">--:--:--</p>
+      <p class="why__badge-status" id="liveClockStatus">Checking hours…</p>
+      <div class="why__hours">
+        <div><span>Mon–Fri</span><span>08:00 – 18:00</span></div>
+        <div><span>Saturday</span><span>09:00 – 13:00</span></div>
+        <div><span>Sunday</span><span>Emergency only</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="section-head">
+    <p class="eyebrow">Kind Words</p>
+    <h2>What customers say</h2>
+  </div>
+  <div class="reviews__carousel">
+    <div class="reviews__track" id="reviewsTrack">
+      <blockquote class="review-card">
+        <p>"Boiler went out on the coldest night of the year — Ed was out first thing and had it sorted before lunch."</p>
+        — Local Customer, Placeholder Review
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Straightforward, tidy, and told us exactly what it would cost before starting. No surprises."</p>
+        — Local Customer, Placeholder Review
+      </blockquote>
+      <blockquote class="review-card">
+        <p>"Fitted our new bathroom plumbing and it's been perfect since. Would recommend to anyone."</p>
+        — Local Customer, Placeholder Review
+      </blockquote>
+    </div>
+    <div class="reviews__dots" id="reviewsDots"></div>
+  </div>
+  <p class="reviews__note">* Sample reviews for demo purposes — swap in real customer feedback before launch.</p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="contact__grid">
+    <div class="contact__info">
+      <p class="eyebrow">Get In Touch</p>
+      <h2>Tell me what's going on, I'll take it from there.</h2>
+      <div class="contact__detail">
+        <span class="contact__detail-label">Call or Text</span>
+        <a href="tel:+353868635853">086 863 5853</a>
+      </div>
+      <div class="contact__detail">
+        <span class="contact__detail-label">Email</span>
+        <a href="mailto:heating@edmcgov.ie">heating@edmcgov.ie</a>
+      </div>
+      <div class="contact__detail">
+        <span class="contact__detail-label">Facebook</span>
+        <a href="https://facebook.com/Edmcgovernplumbing" target="_blank" rel="noopener">Edmcgovernplumbing</a>
+      </div>
+    </div>
+
+    <form class="contact__form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <span class="field__error" id="nameError"></span>
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+        <span class="field__error" id="phoneError"></span>
+      </div>
+      <div class="field">
+        <label for="message">What do you need done?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span class="field__error" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
+      <p class="contact__form-note" id="formNote" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__brand-mark">EM</span>
+      <span>Ed McGovern Heating &amp; Plumbing Ltd</span>
+    </div>
+    <p>086 863 5853 · heating@edmcgov.ie</p>
+    <p class="footer__copy">© <span id="year"></span> Ed McGovern Heating &amp; Plumbing Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="tel:+353868635853" class="sticky-call" id="stickyCall">Call Now — 086 863 5853</a>
+
+<script src="script.js"></script>
+</body>
+</html>
